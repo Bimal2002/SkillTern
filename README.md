@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FRONTEND: E LEARNING PLATFORM
 <!-- [![YouTube Video](https://img.youtube.com/vi/gyMwXuJrbJQ/default.jpg)](https://www.youtube.com/watch?v=gyMwXuJrbJQ)
 
@@ -182,3 +183,6 @@ https://e-learning-platform.pro/author-login
 + Website: https://trannhatsang.com
 + Email: nhatsang0101@gmail.com
 + Contact me everytime!
+=======
+# SkillTern
+>>>>>>> 123de9eed052edb20742142c8ea84898300b50c0

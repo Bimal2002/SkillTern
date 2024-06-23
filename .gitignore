@@ -27,3 +27,4 @@ dist-ssr
 yarn.lock
 .eslintrc.cjs
 .editorconfig
+README.md
