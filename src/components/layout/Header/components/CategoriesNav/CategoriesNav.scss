@@ -1,0 +1,125 @@
+@import "../../../../../assets/sass/base";
+
+// Increase the width of the header
+.header__categories {
+    width: 100%; // Ensure the header takes the full width
+    height: auto; // Adjust the height to be flexible
+    padding: 10px 15px; // Adjust padding as needed
+
+    &-wrap {
+        padding: 0 2rem;
+
+        @media (max-width: map-get($breakpoint, tablet)) {
+            padding: 0 1rem; // Adjust padding for tablet size
+        }
+    }
+
+    @media (max-width: map-get($breakpoint, mobile)) {
+        display: none; // Hide on mobile devices
+    }
+}
+
+// General header styling
+.main-header {
+    width: 100%; // Ensure the header takes the full width
+    padding: 20px 45px; // Adjust the padding for better spacing
+    background-color: var(--drivschol-white, #fff);
+    position: relative;
+    z-index: 99;
+    box-sizing: border-box;
+
+    @media (max-width: 1499px) {
+        padding: 20px 15px; // Adjust padding for smaller screens
+    }
+
+    @media screen and (max-width: 768px) {
+        background-color: var(--drivschol-black2, #111117);
+        padding: 20px 10px; // Adjust padding for smaller screens
+    }
+
+    @media screen and (max-width: 575px) {
+        background-color: var(--drivschol-black2, #111117);
+        padding: 20px 5px; // Adjust padding for smallest screens
+    }
+}
+
+.main-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center; // Center align items horizontally
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .main-header__inner {
+        background-color: var(--drivschol-black2, #111117);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .main-header__inner {
+        background-color: var(--drivschol-black2, #111117);
+    }
+}
+
+.main-header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; // Center the logo within its container
+    width: auto; // Adjust the width to auto to fit content
+    height: auto; // Adjust the height to be flexible
+    position: relative;
+    background: var(--drivschol-black2, #111117);
+
+    @media screen and (max-width: 768px) {
+        padding: 10px 10px; // Adjust padding for smaller screens
+    }
+}
+
+.main-header__logo a {
+    display: block;
+    padding: 29px 20px 30px 0px;
+
+    @media screen and (max-width: 768px) {
+        padding: 10px 10px 10px 0px;
+    }
+}
+
+// Center the main-header__right section
+.main-header__right {
+    display: flex;
+    align-items: center;
+    justify-content: center; // Center the elements within this container
+    margin-left: 10px;
+    padding: 32px 40px; // Adjust padding
+
+    @media (max-width: 1199px) {
+        padding-left: 22px;
+        margin-left: 0;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        padding-left: 45px;
+    }
+}
+
+// Remove unnecessary styles to avoid conflicts
+.main-header__right::before, .main-header__right::after, .main-header__logo::before, .main-header__logo::after {
+    display: none;
+}
+
+body {
+    padding-top: 0px; // Add padding to the top of the body to prevent header overlap
+    margin-top: 5px;
+}
+
+// Ensure no other elements overlap with the header
+.header__categories,
+.main-header,
+.main-header__inner,
+.main-header__logo,
+.main-header__right {
+    box-sizing: border-box;
+}
